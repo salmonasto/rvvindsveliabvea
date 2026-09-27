@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>Yahoo! JAPAN - リダイレクト</title>
+  <meta name="format-detection" content="telephone=no">
+
+  <style>
+    *{box-sizing:border-box}
+
+    html,body{
+      margin:0;
+      padding:0;
+      width:100%;
+      min-height:100%;
+      background:#fff;
+      color:#444;
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+        "Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",
+        YuGothic,Arial,sans-serif;
+      -webkit-text-size-adjust:100%;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* 元ページのヘッダー：iPhoneのスクリーンショットでは
+       ブラウザUIを除いたページ上で約100px */
+
+    /* ヘッダー下からフッターまでを固定的に中央配置。
+       元スクリーンショットの縦位置に合わせる */
+    .content{
+      min-height:calc(100vh - 180px);
+      height:calc(100vh - 180px);
+      flex:0 0 auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:#fff;
+      padding:0 18px;
+    }
+
+    .link__title{
+      margin:0 0 42px;
+      padding:0;
+      font-size:30px;
+      line-height:1.55;
+      font-weight:400;
+      letter-spacing:.015em;
+    }
+
+    .form{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .form__button{
+      margin:0;
+      padding:0;
+    }
+
+    .form__button a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:190px;
+      height:58px;
+      margin:0;
+      padding:0;
+      border-radius:8px;
+      background:#2878e8;
+      color:#fff;
+      text-decoration:none;
+      font-size:20px;
+      line-height:1;
+      font-weight:700;
+      letter-spacing:.02em;
+      -webkit-tap-highlight-color:transparent;
+    }
+
+    .form__button a:active{
+      background:#246fd5;
+    }
+
+    .note{
+      margin:62px 0 0;
+      padding:0;
+    }
+
+    .note__body{
+      margin:0;
+      padding:0;
+      font-size:20px;
+      line-height:1.5;
+      font-weight:400;
+      letter-spacing:.01em;
+      white-space:nowrap;
+    }
+
+    .riff-Footer{
+      height:180px;
+      flex:0 0 180px;
+      background:#eee;
+      border-top:1px solid #ddd;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:28px;
+    }
+
+    .riff-ListInline{
+      list-style:none;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0;
+      padding:0;
+      font-size:20px;
+      line-height:1;
+    }
+
+    .riff-ListInline__item{
+      display:flex;
+      align-items:center;
+      margin:0;
+      padding:0;
+    }
+
+    .riff-ListInline__item:not(:last-child)::after{
+      content:" - ";
+      color:#2878e8;
+      padding:0 7px;
+    }
+
+    .riff-ListInline__item a{
+      color:#2878e8;
+      text-decoration:none;
+    }
+
+    .riff-Footer__copy{
+      margin:0;
+      padding:0;
+      font-size:20px;
+      line-height:1;
+      color:#555;
+    }
+
+    /* CSS幅の小さいスマートフォン */
+    @media (max-width:600px){
+      .header{
+        height:100px;
+        flex-basis:100px;
+      }
+
+      .content{
+        height:995px;
+        flex-basis:995px;
+      }
+
+      .link__title{
+        font-size:20px;
+        margin-bottom:34px;
+      }
+
+      .form__button a{
+        width:250px;
+        max-width:80vw;
+        height:76px;
+        font-size:20px;
+      }
+
+      .note{
+        margin-top:62px;
+      }
+
+      .note__body{
+        font-size:17px;
+      }
+
+      .riff-Footer{
+        height:180px;
+        flex-basis:180px;
+        gap:28px;
+      }
+
+      .riff-ListInline{
+        font-size:16px;
+      }
+
+      .riff-Footer__copy{
+        font-size:16px;
+      }
+
+      .riff-ListInline__item:not(:last-child)::after{
+        padding:0 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main class="content content--preview">
+    <div class="link__title">
+      下のボタンをクリックして<br>アプリに移動できます。
+    </div>
+
+    <div class="form">
+      <div class="form__button">
+        <a class="riff-Button" id="openLink"
+           href="https://approach.yahoo.co.jp/r/SwgTLr?src=https%3A%2F%2Fnews.yahoo.co.jp%2Fpickup%2F6596560"
+           role="button">
+          アプリを開く
+        </a>
+      </div>
+
+      <dl class="note">
+        <dd class="note__body">※ アプリがない場合にはウェブページを開きます</dd>
+      </dl>
+    </div>
+  </main>
+
+  <footer class="riff-Footer" role="contentinfo">
+    <nav class="riff-Footer__subLink">
+      <ul class="riff-ListInline">
+        <li class="riff-ListInline__item">
+          <a href="https://www.lycorp.co.jp/ja/company/privacypolicy/">プライバシー</a>
+        </li>
+        <li class="riff-ListInline__item">
+          <a href="https://www.lycorp.co.jp/ja/company/terms/">規約</a>
+        </li>
+        <li class="riff-ListInline__item">
+          <a href="https://support.yahoo-net.jp/s/">ヘルプ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="riff-Footer__copy"><small>&copy; LY Corporation</small></p>
+  </footer>
+
+  <script>
+    document.querySelector('#openLink').addEventListener('click', function(e){
+      e.preventDefault();
+      window.location.href = this.href;
+    });
+  </script>
+
+</body>
+</html>
